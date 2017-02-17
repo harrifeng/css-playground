@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+  </head>
+  <script>
+   var root  = document.documentElement;
+   if ('textShadow' in root.style) {
+     root.classList.add('textshadow')
+   } else {
+     root.classList.add('no-textshadow')
+   }
+  </script>
+  <style>
+   h1 { color: red; }
+   .textshadow h1 {
+     color: transparent;
+     text-shadow: 0 0 .3em gray;
+   }
+  </style>
+
+  <body>
+    <h1>
+      Hello
+    </h1>
+  </body>
+</html>
